@@ -1,0 +1,8 @@
+
+<h2>To Do List</h2>
+
+<div class="todo-item" *ngFor="let todo of todos" (click)="selectTodo(todo)" [ngStyle]="setTodoStyles(todo)">
+  {{todo.subject}}
+</div>
+
+<todo-detail [todo]="selectedTodo"></todo-detail>

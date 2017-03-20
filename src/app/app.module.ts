@@ -1,20 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {TodoListComponent} from '../todos/todos-list/todo-list.component';
+import {TodoDetailComponent} from '../todos/todo-detail/todo-detail.component'; 
+import { Logger } from '../shared/logger.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoListComponent,
+    TodoDetailComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
+    BrowserModule
   ],
-  providers: [],
+  providers: [Logger],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

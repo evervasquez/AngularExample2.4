@@ -1,28 +1,40 @@
-# AngularTodoList2.4
+# Angular 2 Todo List Example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
+This is an example skeleton of a todo list in order to introduce core concepts of Angular 2.
 
-## Development server
+Right now the app contains a list of predefined items, retrieved from a service and displayed in a component. The component also uses another component with details of selected item.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The topics covered in this project are:
 
-## Code scaffolding
+* Modules
+* Components
+* Templates
+* Metadata
+* Data Binding
+* Directives
+* Services
+* Dependency Injection
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Look at [Introducción a Angular 2](https://blog.enriqueoriol.com/2017/03/introduccion-angular-modulo-y-componente.html) article in order to get read and understand the concepts shown here.
 
-## Build
+## Install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Clone the repository in your computer by doing:
 
-## Running unit tests
+```
+gti clone https://github.com/kaikcreator/AngularExample2.4.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Install npm dependencies, by doing:
 
-## Running end-to-end tests
+```
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Run
 
-## Further help
+To run the project, do:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+ng serve
+```
